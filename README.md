@@ -1,4 +1,4 @@
-# KinIn Framework Documentation
+# Joseph Ramses Méndez Cam
 
 [![View Documentation](https://img.shields.io/badge/Documentation-View%20Live-blue?style=for-the-badge&logo=github)](https://yoyiberto.github.io)
 
@@ -7,7 +7,7 @@ Welcome to the source repository for the **my personal website**.
 
 ---
 
-## ➡️ **[Access the Full Documentation Here](https://yoyiberto.github.io)** ⬅️
+## ➡️ **[Access the Full website here](https://yoyiberto.github.io)** ⬅️
 
 ---
 
