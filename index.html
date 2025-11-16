@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Joseph Méndez</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Joseph Ramses Méndez Cam</h1>
+                    <h2 class="hero-subtitle">Mechatronics Engineer</h2>
+                    <p class="hero-affiliation">ERASMUS MSc. Embedded Intelligence Nanosystems Engineering</p>
+                    <div class="social-links">
+                        <a href="mailto:josephmc1906@gmail.com" target="_blank" title="Email">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 8L10.89 13.26C11.54 13.67 12.46 13.67 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/josephramses" target="_blank" title="LinkedIn">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/josephramses" target="_blank" title="GitHub">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/33749213311" target="_blank" title="WhatsApp">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="imgs/personal_photo.jpg" alt="Joseph Ramses Méndez Cam">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Technologies Banner -->
+    <section class="scrolling-banner">
+        <div class="scrolling-banner-track">
+            <img alt="Arduino" src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg">
+            <img alt="STM32" src="https://raw.githubusercontent.com/STMicroelectronics/.github/311e6372d0fccf4bb17769da319b2bac525ffd43/profile/images/st-logo.svg">
+            <img alt="AWS" src="https://cdn.worldvectorlogo.com/logos/aws-2.svg">
+            <img alt="Python" src="https://cdn.worldvectorlogo.com/logos/python-5.svg">
+            <img alt="C" src="https://cdn.worldvectorlogo.com/logos/c-1.svg">
+            <img alt="TensorFlow" src="https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg">
+            <img alt="Node-RED" src="https://cdn.worldvectorlogo.com/logos/node-red-1.svg">
+            <img alt="MQTT" style="height: 40px;" src="https://github.com/mqtt/mqttorg-graphics/blob/master/mqtt-logo-250.png?raw=true">
+            <img alt="MATLAB" src="https://cdn.worldvectorlogo.com/logos/matlab.svg">
+            <img alt="OpenCV" src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg">
+            <img alt="Docker" src="https://cdn.worldvectorlogo.com/logos/docker.svg">
+            <img alt="LoRaWAN" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/lorawan-1.svg">
+            <img alt="Raspberry Pi" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/raspberry-pi.svg">
+            <img alt="Visual Studio" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/visual-studio-code.svg">
+            <img alt="Zigbee" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/zigbee.svg">
+            <img alt="Sigfox" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/sigfox.svg">
+            <img alt="Bluetooth" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/bluetooth.svg">
+            <img alt="NFC" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/nfc-5.svg">
+            
+            <!-- Duplicate for seamless loop -->
+            <img alt="Arduino" src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg">
+            <img alt="STM32" src="https://raw.githubusercontent.com/STMicroelectronics/.github/311e6372d0fccf4bb17769da319b2bac525ffd43/profile/images/st-logo.svg">
+            <img alt="AWS" src="https://cdn.worldvectorlogo.com/logos/aws-2.svg">
+            <img alt="Python" src="https://cdn.worldvectorlogo.com/logos/python-5.svg">
+            <img alt="C" src="https://cdn.worldvectorlogo.com/logos/c-1.svg">
+            <img alt="TensorFlow" src="https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg">
+            <img alt="Node-RED" src="https://cdn.worldvectorlogo.com/logos/node-red-1.svg">
+            <img alt="MQTT" style="height: 40px;" src="https://github.com/mqtt/mqttorg-graphics/blob/master/mqtt-logo-250.png?raw=true">
+            <img alt="MATLAB" src="https://cdn.worldvectorlogo.com/logos/matlab.svg">
+            <img alt="OpenCV" src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg">
+            <img alt="Docker" src="https://cdn.worldvectorlogo.com/logos/docker.svg">
+            <img alt="LoRaWAN" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/lorawan-1.svg">
+            <img alt="Raspberry Pi" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/raspberry-pi.svg">
+            <img alt="Visual Studio" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/visual-studio-code.svg">
+            <img alt="Zigbee" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/zigbee.svg">
+            <img alt="Sigfox" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/sigfox.svg">
+            <img alt="Bluetooth" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/bluetooth.svg">
+            <img alt="NFC" style="height: 40px;" src="https://cdn.worldvectorlogo.com/logos/nfc-5.svg">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Hello there!</h2>
+            <div class="about-content">
+                <p>
+                    I am a Mechatronics Engineer currently pursuing an ERASMUS MSc. in Embedded Intelligence Nanosystems Engineering.
+                    I'm a recipient of the prestigious Erasmus Mundus Excellence Scholarship, studying across three European universities:
+                    Hellenic Mediterranean University (Greece), University of Siegen (Germany), and University of Orléans (France).
+                </p>
+                <p>
+                    My work explores AI and Machine Learning, Robotics and Automation, Computer Vision, and UAV/Drone systems.
+                    I obtained my Bachelor's degree in Mechatronics Engineering from Pontificia Universidad Católica del Perú (PUCP).
+                    Previously, I conducted research at Yamagata University in Japan, focusing on image recognition using convolutional neural networks.
+                </p>
+                <p>
+                    I have worked as an R&D Automation Engineer at RESEMIN S.A., Research Assistant in Robotics at PUCP, and Engineering Team Member at qAira Drones.
+                    My research has been published in IEEE, Elsevier, and Springer, focusing on robotics automation, drone technology for precision agriculture, and machine learning applications.
+                </p>
+                <p>
+                    <strong>Languages:</strong> Spanish (Native), English (C2), Japanese (B2), French(A2), German (A2)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn active" data-filter="main">Main Projects</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project Card 1 - Darwin-OP Humanoid -->
+                <div class="project-card" data-category="main robotics">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/Yoyiberto/humanoid-ROS/7772364973da9af2d3a4862e6a7574c88b1563f5/humanoid.gif" alt="Darwin-OP Humanoid Robot" style="width: 100%; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Darwin-OP Humanoid Robot Simulation</h3>
+                        <p class="project-description">Advanced humanoid robot control simulation in ROS & Gazebo. Features dynamic walking control, joint manipulation, and robust system integration using ros_control.</p>
+                        <div class="project-tags">
+                            <span class="tag">ROS Noetic</span>
+                            <span class="tag">Gazebo</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">URDF</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yoyiberto/humanoid-ROS" class="github-btn" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 - Robot Inverse Kinematics -->
+                <div class="project-card" data-category="main robotics">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/Yoyiberto/robot-docker-v2/836eed8d1ad3add8c5de7058ba95ccaa18446ed7/results/robot_visualization.png" alt="Robot Inverse Kinematics" style="width: 100%; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Robot Visualization & Inverse Kinematics</h3>
+                        <p class="project-description">Docker-based robotics project for URDF model visualization and inverse kinematics calculation using ROS Noetic and Python libraries without MATLAB.</p>
+                        <div class="project-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">ROS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">IK</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yoyiberto/robot-docker-v2" class="github-btn" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 - Mining Robot Simulation -->
+                <div class="project-card" data-category="main automation">
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/Yoyiberto/RobotExplosiveSim/a2adc5fc42eda466a4a85868ec829230e5e0d912/UR_Sim_1.gif" alt="Mining Robot Simulation" style="width: 100%; height: 250px; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Robotic Explosive Placement for Mining</h3>
+                        <p class="project-description">RoboDK simulation of a UR robotic arm on a mobile truck platform for automated explosive placement in mining operations, enhancing safety and precision.</p>
+                        <div class="project-tags">
+                            <span class="tag">RoboDK</span>
+                            <span class="tag">UR Robot</span>
+                            <span class="tag">Mining</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yoyiberto/RobotExplosiveSim" class="github-btn" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 - PLC Automation -->
+                <div class="project-card" data-category="main automation">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <rect x="20" y="25" width="60" height="50" fill="#2563eb" rx="3"/>
+                            <rect x="25" y="30" width="20" height="15" fill="#1e40af"/>
+                            <rect x="50" y="30" width="20" height="15" fill="#1e40af"/>
+                            <rect x="25" y="50" width="20" height="15" fill="#1e40af"/>
+                            <rect x="50" y="50" width="20" height="15" fill="#1e40af"/>
+                            <circle cx="78" cy="40" r="3" fill="#4ade80"/>
+                            <circle cx="78" cy="50" r="3" fill="#4ade80"/>
+                            <circle cx="78" cy="60" r="3" fill="#fbbf24"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>Industrial Automation & PLC Programming</h3>
+                        <p class="project-description">Heavy machinery automation with Siemens and Allen-Bradley PLCs, HMI development, and Motion Control systems.</p>
+                        <div class="project-tags">
+                            <span class="tag">IEC 61131-3</span>
+                            <span class="tag">Siemens</span>
+                            <span class="tag">EthernetIP</span>
+                            <span class="tag">ProfiNet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 - Industrial Robotics -->
+                <div class="project-card" data-category="main robotics">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <rect x="25" y="30" width="50" height="40" fill="#2563eb" rx="5"/>
+                            <circle cx="40" cy="45" r="5" fill="white"/>
+                            <circle cx="60" cy="45" r="5" fill="white"/>
+                            <rect x="38" y="58" width="24" height="3" fill="white" rx="1"/>
+                            <rect x="20" y="20" width="10" height="10" fill="#2563eb" rx="2"/>
+                            <rect x="70" y="20" width="10" height="10" fill="#2563eb" rx="2"/>
+                            <rect x="15" y="50" width="8" height="20" fill="#1e40af" rx="2"/>
+                            <rect x="77" y="50" width="8" height="20" fill="#1e40af" rx="2"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>Industrial Robotics Research</h3>
+                        <p class="project-description">Research with industrial robot arms (UR, Fanuc, Kuka, ABB), Computer Vision for inspection, and Motion Planning algorithms.</p>
+                        <div class="project-tags">
+                            <span class="tag">ROS2</span>
+                            <span class="tag">Gazebo</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Motion Planning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 - SLAM -->
+                <div class="project-card" data-category="main robotics">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <circle cx="50" cy="50" r="30" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="5,3"/>
+                            <circle cx="50" cy="50" r="20" fill="none" stroke="#1e40af" stroke-width="2" stroke-dasharray="3,2"/>
+                            <circle cx="50" cy="50" r="5" fill="#2563eb"/>
+                            <circle cx="35" cy="35" r="3" fill="#1e40af"/>
+                            <circle cx="65" cy="35" r="3" fill="#1e40af"/>
+                            <circle cx="35" cy="65" r="3" fill="#1e40af"/>
+                            <circle cx="65" cy="65" r="3" fill="#1e40af"/>
+                            <line x1="50" y1="50" x2="35" y2="35" stroke="#2563eb" stroke-width="1"/>
+                            <line x1="50" y1="50" x2="65" y2="35" stroke="#2563eb" stroke-width="1"/>
+                            <line x1="50" y1="50" x2="35" y2="65" stroke="#2563eb" stroke-width="1"/>
+                            <line x1="50" y1="50" x2="65" y2="65" stroke="#2563eb" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>SLAM & Motion Planning</h3>
+                        <p class="project-description">Implementation of Simultaneous Localization and Mapping algorithms for autonomous navigation systems.</p>
+                        <div class="project-tags">
+                            <span class="tag">ROS</span>
+                            <span class="tag">SLAM</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 7 - UAV -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <ellipse cx="50" cy="50" rx="15" ry="8" fill="#2563eb"/>
+                            <circle cx="25" cy="30" r="12" fill="#1e40af" opacity="0.7"/>
+                            <circle cx="75" cy="30" r="12" fill="#1e40af" opacity="0.7"/>
+                            <circle cx="25" cy="70" r="12" fill="#1e40af" opacity="0.7"/>
+                            <circle cx="75" cy="70" r="12" fill="#1e40af" opacity="0.7"/>
+                            <line x1="35" y1="40" x2="45" y2="48" stroke="#2563eb" stroke-width="2"/>
+                            <line x1="65" y1="40" x2="55" y2="48" stroke="#2563eb" stroke-width="2"/>
+                            <line x1="35" y1="60" x2="45" y2="52" stroke="#2563eb" stroke-width="2"/>
+                            <line x1="65" y1="60" x2="55" y2="52" stroke="#2563eb" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>UAV Software Development</h3>
+                        <p class="project-description">Autonomous drone systems using PX4, MAVLink, and LiDAR point cloud processing for 3D reconstruction and path planning.</p>
+                        <div class="project-tags">
+                            <span class="tag">PX4</span>
+                            <span class="tag">MAVLink</span>
+                            <span class="tag">PCL</span>
+                            <span class="tag">Sensor Fusion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 8 - CNN -->
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <circle cx="25" cy="30" r="5" fill="#2563eb"/>
+                            <circle cx="25" cy="50" r="5" fill="#2563eb"/>
+                            <circle cx="25" cy="70" r="5" fill="#2563eb"/>
+                            <circle cx="50" cy="25" r="5" fill="#1e40af"/>
+                            <circle cx="50" cy="40" r="5" fill="#1e40af"/>
+                            <circle cx="50" cy="55" r="5" fill="#1e40af"/>
+                            <circle cx="50" cy="75" r="5" fill="#1e40af"/>
+                            <circle cx="75" cy="35" r="5" fill="#2563eb"/>
+                            <circle cx="75" cy="50" r="5" fill="#2563eb"/>
+                            <circle cx="75" cy="65" r="5" fill="#2563eb"/>
+                            <line x1="30" y1="30" x2="45" y2="25" stroke="#2563eb" stroke-width="1" opacity="0.5"/>
+                            <line x1="30" y1="50" x2="45" y2="40" stroke="#2563eb" stroke-width="1" opacity="0.5"/>
+                            <line x1="30" y1="70" x2="45" y2="75" stroke="#2563eb" stroke-width="1" opacity="0.5"/>
+                            <line x1="55" y1="25" x2="70" y2="35" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
+                            <line x1="55" y1="40" x2="70" y2="50" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
+                            <line x1="55" y1="55" x2="70" y2="50" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
+                            <line x1="55" y1="75" x2="70" y2="65" stroke="#1e40af" stroke-width="1" opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>CNN for Image Classification</h3>
+                        <p class="project-description">Deep Learning models for Object Detection and Semantic Segmentation, focusing on biological species classification.</p>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">CNNs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 9 - CI/CD -->
+                <div class="project-card" data-category="automation">
+                    <div class="project-image">
+                        <svg viewBox="0 0 100 100" style="width: 100%; height: 250px;">
+                            <rect width="100" height="100" fill="#f0f0f0"/>
+                            <circle cx="50" cy="50" r="25" fill="none" stroke="#2563eb" stroke-width="3"/>
+                            <path d="M 50 25 L 65 40 L 50 55 L 35 40 Z" fill="#2563eb"/>
+                            <path d="M 50 45 L 65 60 L 50 75 L 35 60 Z" fill="#1e40af"/>
+                            <circle cx="50" cy="25" r="3" fill="#4ade80"/>
+                            <circle cx="65" cy="40" r="3" fill="#4ade80"/>
+                            <circle cx="50" cy="55" r="3" fill="#fbbf24"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>CI/CD & RPA Implementation</h3>
+                        <p class="project-description">Implemented CI/CD pipelines with Git and Jenkins, and RPA solutions with Power Automate for process optimization.</p>
+                        <div class="project-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">RPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="section featured">
+        <div class="container">
+            <h2 class="section-title">Featured</h2>
+            <p class="section-subtitle">Research Highlights & Publications</p>
+            <div class="featured-grid">
+                <!-- Featured Item 1 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="imgs\Publications\KinIn.png" alt="Inverse Kinematics">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Inverse Kinematics Calculation in IEC 61131-3</h3>
+                        <p>Published in Elsevier (2025). Implementation of inverse kinematics algorithms in Structured Text for industrial automation and PLC programming.</p>
+                        <div class="featured-links">
+                            <a href="https://doi.org/10.1016/j.softx.2025.102252" class="btn-link" target="_blank">Paper</a>
+                            <a href="https://doi.org/10.1016/j.softx.2025.102252" class="btn-link" target="_blank">DOI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 2 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="imgs/Publications/precision_agriculture.jpeg" alt="Drone Agriculture">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Cloud-Based Drone Image Processing for Precision Agriculture</h3>
+                        <p>Published in IEEE (2023). Utilizing UAV technology and cloud computing for agricultural monitoring and analysis.</p>
+                        <div class="featured-links">
+                            <a href="https://doi.org/10.1109/ICSES58500.2023.10293111" class="btn-link" target="_blank">Paper</a>
+                            <a href="https://doi.org/10.1109/ICSES58500.2023.10293111" class="btn-link" target="_blank">DOI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Item 3 -->
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="imgs/Publications/theft_detection.png" alt="Vehicle Detection">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Vehicle Theft Detection Using CCTV and Machine Learning</h3>
+                        <p>Published in Springer (2022). Predictive models for detecting stolen vehicles using CCTV cameras and machine learning algorithms.</p>
+                        <div class="featured-links">
+                            <a href="https://doi.org/10.1007/978-3-031-30592-4_14" class="btn-link" target="_blank">Paper</a>
+                            <a href="https://doi.org/10.1007/978-3-031-30592-4_14" class="btn-link" target="_blank">DOI</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 - Current Studies -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/erasmus_logo.jpg" alt="Erasmus Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>ERASMUS MSc. in Embedded Intelligence Nanosystems Engineering</h3>
+                        <h4>Erasmus Mundus Excellence Scholarship</h4>
+                        <p class="timeline-date">Oct 2024 – Present · Europe</p>
+                        <ul class="timeline-description">
+                            <li>Hellenic Mediterranean University | Oct 2024 - Feb 2025 | Heraklion, Greece</li>
+                            <li>University of Siegen | Mar 2025 - Aug 2025 | Siegen, Germany</li>
+                            <li>University of Orléans | Feb 2026 - Aug 2026 | Orléans, France</li>
+                            <li>Recipient of prestigious Erasmus Mundus Excellence Scholarship</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 - RESEMIN -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/RESEMIN-LOGO.png" alt="RESEMIN Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>R&D Automation Engineer</h3>
+                        <h4>RESEMIN S.A</h4>
+                        <p class="timeline-date">Dec 2022 – Oct 2024 · Peru</p>
+                        <ul class="timeline-description">
+                            <li>PLC (Siemens, Allen-Bradley) and HMI programming under IEC 61131-3 standard</li>
+                            <li>Integration of Motion Control systems using EthernetIP, ProfiNet, and CAN protocols</li>
+                            <li>Kinematic analysis with MATLAB/Simulink and mechanical design with SolidWorks</li>
+                            <li>CI/CD implementation with Git and RPA automation with Power Automate</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 - PUCP -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/pucp_logo.webp" alt="PUCP Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Robotics Research Assistant</h3>
+                        <h4>Pontificia Universidad Católica del Perú</h4>
+                        <p class="timeline-date">Mar 2022 – Nov 2022 · Lima, Peru</p>
+                        <ul class="timeline-description">
+                            <li>Research with industrial robot arms (UR, Fanuc, Kuka, ABB)</li>
+                            <li>Computer Vision systems for inspection and quality control</li>
+                            <li>Robot simulation in Gazebo and visualization with RViz2</li>
+                            <li>Motion Planning algorithms and Human-Robot Interaction systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 - qAira -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/qaira-logo.png" alt="qAira Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Engineering & IT Team Member</h3>
+                        <h4>qAira Drones</h4>
+                        <p class="timeline-date">Mar 2022 – Jul 2022 · Lima, Peru</p>
+                        <ul class="timeline-description">
+                            <li>UAV/Drone software development using PX4 and MAVLink</li>
+                            <li>3D point cloud processing with LiDAR and PCL for 3D reconstruction</li>
+                            <li>Path Planning algorithms and Sensor Fusion for autonomous navigation</li>
+                            <li>SITL simulation in Gazebo for testing and validation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 5 - Yamagata University -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/yamagata_logo.jpg" alt="Yamagata University Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Student - Image Recognition with CNNs</h3>
+                        <h4>Yamagata University</h4>
+                        <p class="timeline-date">Aug 2019 – Dec 2020 · Yamagata, Japan</p>
+                        <ul class="timeline-description">
+                            <li>Deep Learning models for Object Detection and Semantic Segmentation</li>
+                            <li>Image Processing with OpenCV for biological species classification</li>
+                            <li>CNN hyperparameter tuning for Drosophila life stage classification</li>
+                            <li>Led international student community with cultural events (50+ attendees)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Item - PUCP -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="imgs/pucp_logo.webp" alt="PUCP Logo">
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor in Mechatronics Engineering</h3>
+                        <h4>Pontificia Universidad Católica del Perú</h4>
+                        <p class="timeline-date">Mar 2017 – Jul 2022 · Lima, Peru</p>
+                        <ul class="timeline-description">
+                            <li>Comprehensive training in robotics, automation, and control systems</li>
+                            <li>Focus on AI, Machine Learning, and embedded systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p class="contact-text">I'm always open to discussing new projects, research opportunities, or collaborations in robotics, AI, and automation.</p>
+                <div class="contact-info">
+                    <a href="mailto:josephmc1906@gmail.com" class="contact-email">josephmc1906@gmail.com</a>
+                    <p style="color: var(--text-light); margin: 1rem 0;">
+                        📍 Currently in Orléans, France<br>
+                        📱 +33 749213311
+                    </p>
+                    <div class="social-links-footer">
+                        <a href="https://linkedin.com/in/josephramses" target="_blank" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/josephramses" target="_blank" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Joseph Ramses Méndez Cam. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">
+                Mechatronics Engineer | ERASMUS MSc. Student | AI & Robotics Researcher
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

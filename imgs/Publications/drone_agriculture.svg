@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f9ff"/>
+  
+  <!-- Cloud shapes -->
+  <ellipse cx="100" cy="80" rx="40" ry="25" fill="#2563eb" opacity="0.3"/>
+  <ellipse cx="130" cy="75" rx="35" ry="20" fill="#2563eb" opacity="0.4"/>
+  <ellipse cx="120" cy="85" rx="30" ry="18" fill="#2563eb" opacity="0.35"/>
+  
+  <ellipse cx="300" cy="90" rx="45" ry="28" fill="#2563eb" opacity="0.3"/>
+  <ellipse cx="330" cy="85" rx="38" ry="22" fill="#2563eb" opacity="0.4"/>
+  <ellipse cx="320" cy="95" rx="33" ry="20" fill="#2563eb" opacity="0.35"/>
+  
+  <!-- Drone body -->
+  <ellipse cx="200" cy="140" rx="25" ry="12" fill="#1e40af"/>
+  
+  <!-- Propeller arms -->
+  <line x1="175" y1="130" x2="145" y2="110" stroke="#2563eb" stroke-width="4"/>
+  <line x1="225" y1="130" x2="255" y2="110" stroke="#2563eb" stroke-width="4"/>
+  <line x1="175" y1="150" x2="145" y2="170" stroke="#2563eb" stroke-width="4"/>
+  <line x1="225" y1="150" x2="255" y2="170" stroke="#2563eb" stroke-width="4"/>
+  
+  <!-- Propellers -->
+  <circle cx="145" cy="110" r="18" fill="#2563eb" opacity="0.6"/>
+  <circle cx="255" cy="110" r="18" fill="#2563eb" opacity="0.6"/>
+  <circle cx="145" cy="170" r="18" fill="#2563eb" opacity="0.6"/>
+  <circle cx="255" cy="170" r="18" fill="#2563eb" opacity="0.6"/>
+  
+  <!-- Propeller blades -->
+  <ellipse cx="145" cy="110" rx="22" ry="3" fill="#1e40af" transform="rotate(45 145 110)"/>
+  <ellipse cx="145" cy="110" rx="22" ry="3" fill="#1e40af" transform="rotate(-45 145 110)"/>
+  <ellipse cx="255" cy="110" rx="22" ry="3" fill="#1e40af" transform="rotate(45 255 110)"/>
+  <ellipse cx="255" cy="110" rx="22" ry="3" fill="#1e40af" transform="rotate(-45 255 110)"/>
+  <ellipse cx="145" cy="170" rx="22" ry="3" fill="#1e40af" transform="rotate(45 145 170)"/>
+  <ellipse cx="145" cy="170" rx="22" ry="3" fill="#1e40af" transform="rotate(-45 145 170)"/>
+  <ellipse cx="255" cy="170" rx="22" ry="3" fill="#1e40af" transform="rotate(45 255 170)"/>
+  <ellipse cx="255" cy="170" rx="22" ry="3" fill="#1e40af" transform="rotate(-45 255 170)"/>
+  
+  <!-- Camera/sensor -->
+  <rect x="195" y="145" width="10" height="8" fill="#1e40af" rx="1"/>
+  
+  <!-- Agricultural field below -->
+  <rect x="50" y="220" width="300" height="60" fill="#86efac" opacity="0.4"/>
+  <rect x="60" y="225" width="30" height="50" fill="#22c55e" opacity="0.5"/>
+  <rect x="100" y="225" width="30" height="50" fill="#22c55e" opacity="0.6"/>
+  <rect x="140" y="225" width="30" height="50" fill="#22c55e" opacity="0.5"/>
+  <rect x="180" y="225" width="30" height="50" fill="#22c55e" opacity="0.6"/>
+  <rect x="220" y="225" width="30" height="50" fill="#22c55e" opacity="0.5"/>
+  <rect x="260" y="225" width="30" height="50" fill="#22c55e" opacity="0.6"/>
+  <rect x="300" y="225" width="30" height="50" fill="#22c55e" opacity="0.5"/>
+  
+  <!-- Signal waves from drone to field -->
+  <path d="M 200 152 Q 180 180 160 200" stroke="#2563eb" stroke-width="2" fill="none" stroke-dasharray="5,3" opacity="0.6"/>
+  <path d="M 200 152 Q 200 180 200 200" stroke="#2563eb" stroke-width="2" fill="none" stroke-dasharray="5,3" opacity="0.6"/>
+  <path d="M 200 152 Q 220 180 240 200" stroke="#2563eb" stroke-width="2" fill="none" stroke-dasharray="5,3" opacity="0.6"/>
+  
+  <!-- Data points on field -->
+  <circle cx="160" cy="200" r="3" fill="#2563eb"/>
+  <circle cx="200" cy="200" r="3" fill="#2563eb"/>
+  <circle cx="240" cy="200" r="3" fill="#2563eb"/>
+</svg>

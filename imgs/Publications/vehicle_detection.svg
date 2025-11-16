@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f9ff"/>
+  
+  <!-- CCTV Camera pole -->
+  <rect x="80" y="120" width="8" height="100" fill="#64748b" rx="2"/>
+  
+  <!-- CCTV Camera -->
+  <rect x="70" y="100" width="30" height="25" fill="#1e40af" rx="3"/>
+  <ellipse cx="95" cy="112" rx="10" ry="10" fill="#334155"/>
+  <circle cx="95" cy="112" r="6" fill="#3b82f6"/>
+  <circle cx="97" cy="110" r="2" fill="#60a5fa"/>
+  
+  <!-- Second CCTV Camera -->
+  <rect x="310" y="90" width="8" height="110" fill="#64748b" rx="2"/>
+  <rect x="300" y="70" width="30" height="25" fill="#1e40af" rx="3"/>
+  <ellipse cx="305" cy="82" rx="10" ry="10" fill="#334155"/>
+  <circle cx="305" cy="82" r="6" fill="#3b82f6"/>
+  <circle cx="307" cy="80" r="2" fill="#60a5fa"/>
+  
+  <!-- Road/street -->
+  <rect x="50" y="200" width="300" height="80" fill="#475569"/>
+  <rect x="50" y="235" width="300" height="6" fill="#fbbf24" opacity="0.8"/>
+  
+  <!-- Car 1 (normal) -->
+  <rect x="120" y="215" width="60" height="30" fill="#22c55e" rx="4"/>
+  <rect x="130" y="205" width="40" height="15" fill="#86efac" rx="3"/>
+  <circle cx="135" cy="245" r="8" fill="#1f2937"/>
+  <circle cx="165" cy="245" r="8" fill="#1f2937"/>
+  <circle cx="135" cy="245" r="4" fill="#64748b"/>
+  <circle cx="165" cy="245" r="4" fill="#64748b"/>
+  
+  <!-- Car 2 (stolen - highlighted in red) -->
+  <rect x="220" y="215" width="60" height="30" fill="#ef4444" rx="4"/>
+  <rect x="230" y="205" width="40" height="15" fill="#fca5a5" rx="3"/>
+  <circle cx="235" cy="245" r="8" fill="#1f2937"/>
+  <circle cx="265" cy="245" r="8" fill="#1f2937"/>
+  <circle cx="235" cy="245" r="4" fill="#64748b"/>
+  <circle cx="265" cy="245" r="4" fill="#64748b"/>
+  
+  <!-- Alert box around stolen car -->
+  <rect x="215" y="210" width="70" height="40" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="8,4" rx="5"/>
+  
+  <!-- Vision lines from cameras to cars -->
+  <line x1="85" y1="115" x2="150" y2="220" stroke="#2563eb" stroke-width="2" opacity="0.5" stroke-dasharray="5,3"/>
+  <line x1="315" y1="85" x2="250" y2="220" stroke="#2563eb" stroke-width="2" opacity="0.5" stroke-dasharray="5,3"/>
+  
+  <!-- AI/ML Neural network visualization -->
+  <g transform="translate(140, 30)">
+    <!-- Input layer -->
+    <circle cx="0" cy="20" r="5" fill="#2563eb"/>
+    <circle cx="0" cy="40" r="5" fill="#2563eb"/>
+    <circle cx="0" cy="60" r="5" fill="#2563eb"/>
+    
+    <!-- Hidden layer -->
+    <circle cx="40" cy="15" r="5" fill="#1e40af"/>
+    <circle cx="40" cy="35" r="5" fill="#1e40af"/>
+    <circle cx="40" cy="55" r="5" fill="#1e40af"/>
+    <circle cx="40" cy="75" r="5" fill="#1e40af"/>
+    
+    <!-- Output layer -->
+    <circle cx="80" cy="30" r="5" fill="#dc2626"/>
+    <circle cx="80" cy="50" r="5" fill="#22c55e"/>
+    
+    <!-- Connections -->
+    <line x1="5" y1="20" x2="35" y2="15" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <line x1="5" y1="20" x2="35" y2="35" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <line x1="5" y1="40" x2="35" y2="35" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <line x1="5" y1="40" x2="35" y2="55" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <line x1="5" y1="60" x2="35" y2="55" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <line x1="5" y1="60" x2="35" y2="75" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    
+    <line x1="45" y1="15" x2="75" y2="30" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+    <line x1="45" y1="35" x2="75" y2="30" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+    <line x1="45" y1="55" x2="75" y2="50" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+    <line x1="45" y1="75" x2="75" y2="50" stroke="#1e40af" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Alert icon -->
+  <circle cx="250" cy="180" r="15" fill="#dc2626"/>
+  <text x="250" y="188" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">!</text>
+</svg>
